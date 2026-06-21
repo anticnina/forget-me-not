@@ -24,6 +24,8 @@ Forget-Me-Not is a desktop social memory-mapping application built with Python a
 * 🌐 **Public Maps:** Proudly display your adventures on your profile for all your friends to see.
 * 🔒 **Private Maps:** Keep your personal journals secure and strictly invite-only.
 * 🤝 **Shared Maps:** Create collaborative spaces where you and your friends can all plant memories together.
+  <img width="2402" height="1618" alt="my maps" src="https://github.com/user-attachments/assets/db8b8796-c4cd-4f30-a638-7576b0734e29" />
+
 
 ### 👥 Social & Profiles
 
@@ -37,11 +39,11 @@ Forget-Me-Not is a desktop social memory-mapping application built with Python a
 * **Rich cards:** Each post shows the friend's avatar, their username, the map it was posted on, the pin name, description, and photo.
 * **Jump to the memory:** Click any feed card to open that map and pan directly to the exact pin, with its popup open.
 * **Always accessible:** The **📰 Feed** button in the top bar brings you back to the feed from anywhere in the app.
+<img width="2400" height="1614" alt="feed" src="https://github.com/user-attachments/assets/91e48e38-a7a1-4a30-ab4f-effe56cb9051" />
 
 ### ⚡ Live Synchronization
 
 * **Real-time Updates:** Pins auto-refresh every 5 seconds, ensuring you see your friends' new memories the moment they plant them.
-<img width="2398" height="1616" alt="image" src="https://github.com/user-attachments/assets/97f06f30-2d6a-4ac8-8d0f-f47004e88bf9" />
 
 ---
 
