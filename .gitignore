@@ -1,0 +1,7 @@
+config.ini
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+assets/_map.html

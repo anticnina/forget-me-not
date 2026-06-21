@@ -1,0 +1,10 @@
+[database]
+host = localhost
+port = 5432
+dbname = forget_me_not
+user = postgres
+password = your_password_here
+
+[app]
+name = forget me not
+poll_interval_ms = 5000
