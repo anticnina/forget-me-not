@@ -16,7 +16,7 @@ Forget-Me-Not is a desktop social memory-mapping application built with Python a
 
 ### 🗺️ Flexible Map Management
 
-* **Infinite Canvases:** Create as many maps as you want (e.g., *“Summer '25 Roadtrip”*, *“Best Coffee Spots”*).
+* **Infinite Canvases:** Create as many maps as you want (e.g., *"Summer '25 Roadtrip"*, *"Best Coffee Spots"*).
 * **Seamless Switching:** Easily hop between your different maps using the intuitive sidebar navigation.
 
 ### 🔒 Smart Privacy & Collaboration
@@ -29,6 +29,14 @@ Forget-Me-Not is a desktop social memory-mapping application built with Python a
 
 * **Connect:** Send and accept friend requests to build your inner circle.
 * **Explore:** Visit friends' profiles to browse their bios, profile pictures, and public maps.
+* **Friends Tab:** Browse all maps belonging to your friends directly from the sidebar — each entry shows the friend's profile picture so you always know whose map it is.
+
+### 📰 Friends Feed
+
+* **Stay in the loop:** The feed is the first thing you see after logging in — a scrollable timeline of every memory your friends have recently planted.
+* **Rich cards:** Each post shows the friend's avatar, their username, the map it was posted on, the pin name, description, and photo.
+* **Jump to the memory:** Click any feed card to open that map and pan directly to the exact pin, with its popup open.
+* **Always accessible:** The **📰 Feed** button in the top bar brings you back to the feed from anywhere in the app.
 
 ### ⚡ Live Synchronization
 
@@ -151,22 +159,23 @@ forget-me-not/
 ├── models/
 │   ├── user.py              # User dataclass + CRUD (create, login, update profile)
 │   ├── map_model.py         # Map CRUD, privacy, collaborators, access checks
-│   ├── pin.py               # Pin CRUD
+│   ├── pin.py               # Pin CRUD + FeedItem + get_feed_for_user()
 │   ├── friendship.py        # Friend requests, accept/decline, friend list
 │   └── map_invitation.py    # Private map invite flow
 │
 ├── ui/
 │   ├── login_window.py      # Login dialog
 │   ├── signup_window.py     # Sign-up dialog with profile photo
-│   ├── main_window.py       # Main window — sidebar, map panel, top bar
+│   ├── main_window.py       # Main window — sidebar, feed/map stack, top bar
 │   ├── map_view.py          # Leaflet map widget + pin dialog launcher
+│   ├── feed_panel.py        # Friends feed — scrollable post cards
 │   ├── friends_panel.py     # Search users, send/manage friend requests
 │   ├── profile_window.py    # View/edit own profile; view friends' profiles
 │   └── pin_dialog.py        # Add-pin form (name, description, photo)
 │
 ├── utils/
 │   ├── flower.py            # Renders the 🌸 emoji with a blue hue filter
-│   ├── avatar.py            # Circular profile picture clipping
+│   ├── avatar.py            # Circular profile picture clipping with border
 │   └── auth.py              # bcrypt helpers
 │
 └── assets/

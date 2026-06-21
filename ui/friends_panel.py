@@ -104,7 +104,7 @@ class FriendsPanel(QWidget):
     def _load_friends(self):
         self.friends_list.clear()
         for friend in fs_model.get_friends(self.current_user.id):
-            item = QListWidgetItem(f"👤 {friend.username}  ({friend.full_name})")
+            item = QListWidgetItem(f"👤 {friend.username}")
             item.setData(Qt.ItemDataRole.UserRole, friend)
             self.friends_list.addItem(item)
 
